@@ -18,6 +18,14 @@ namespace ParallelAndNarrowChange{
 
             cart.CalculateTotalPrice().Should().Be(10);
         }
+        
+        [Test]
+        public void calculate_the_final_price_for_multiple_items(){
+            cart.Add(10);
+            cart.Add(20);
+
+            cart.CalculateTotalPrice().Should().Be(30);
+        }
 
         [Test]
         public void knows_the_number_of_items(){

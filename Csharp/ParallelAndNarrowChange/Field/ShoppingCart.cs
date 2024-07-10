@@ -12,7 +12,7 @@
         }
 
         public void Add(int aPrice){
-            this.price = aPrice;
+            this.price += aPrice;
         }
 
         public int NumberOfProducts(){
